@@ -1,0 +1,26 @@
+main: org.serenity.plugins.SerenityMapManager.SerenityMapManager
+
+name: SerenityMapManager
+version: 0.1
+description: Restores a world to the state stored in a backup
+
+commands:
+  teleport:
+    description: Teleports a specified player to the specified world. If no player is specified, it will teleport the invoker.
+    permission: server.op
+    usage: "Usage: /teleport <worldName> [playerName]"
+
+  teleportall:
+    description: Teleports all players to the specified world.
+    permission: server.op
+    usage: "Usage: /teleportall <worldName>"
+
+  worldlist:
+    description: Lists the currently loaded worlds.
+    permission: server.op
+    usage: "Usage: /worldlist"
+
+  worldrestore:
+    description: Restores the specified world to its save data state.
+    permission: server.op
+    usage: "Usage: /worldrestore <worldName>"
